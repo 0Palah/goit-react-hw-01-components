@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
 import { StatisticElem } from './StatisticElem';
 
-export function Statistics({ data }) {
+export function Statistics({ data, titleText }) {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
-
+      {/* відмальовка за умовою */}
+      {titleText && <h2 className="title">{titleText}</h2>}
       <ul className="stat-list">
         {data.map(elem => (
-          <li className="item" key={elem.id}>
-            <StatisticElem title={elem.label} stats={elem.percentage} />
-          </li>
+          <StatisticElem
+            key={elem.id}
+            title={elem.label}
+            stats={elem.percentage}
+          />
         ))}
       </ul>
     </section>

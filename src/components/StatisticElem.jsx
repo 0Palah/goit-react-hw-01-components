@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 export function StatisticElem({ title, stats }) {
   return (
-    <>
-      <span className="label">{title}</span>
-      <span className="percentage">{stats}%</span>;
-    </>
+    <li className="stat-item">
+      <span className="stat-label">{title}</span>
+      <span className="stat-percentage">{stats}%</span>;
+    </li>
   );
 }
 

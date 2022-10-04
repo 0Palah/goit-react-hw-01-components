@@ -1,6 +1,14 @@
 @import-normalize; /* bring in normalize.css styles */
 
-body {
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+li body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,4 +20,80 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.profile {
+  width: 600px;
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.statistics {
+  width: 600px;
+  text-align: center;
+  background-color: lightgrey;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+
+.stat-list {
+  display: flex;
+  border-radius: 10px;
+  /* overflow: hidden; */
+
+  justify-content: space-around;
+}
+
+.stat-item {
+  background-color: royalblue;
+  width: 100%;
+}
+
+.stat-label {
+  display: block;
+}
+
+.friend-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.friend-status {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.isOnline {
+  border-radius: 50%;
+  background-color: green;
+}
+
+.isOffline {
+  border-radius: 50%;
+  background-color: red;
+}
+
+.friend-avatar {
+  object-fit: contain;
+}
+
+.transaction-history {
+  border: 4px solid black;
+  width: 600px;
+  border-collapse: collapse;
+}
+
+.table-th {
+  border: 2px solid black;
+}
+
+.table-td {
+  border: 2px solid black;
 }
