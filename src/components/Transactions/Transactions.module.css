@@ -13,7 +13,7 @@
 .tableTh {
   border-style: solid;
   border-width: 0 1px 1px 0;
-  border-color: white;
+  border-color: lightgrey;
   font-size: 26px;
   padding: 10px;
 }
@@ -22,13 +22,20 @@
   border-style: solid;
   border-width: 0 1px 1px 0;
   padding: 10px;
-  border-color: white;
+  border-color: lightgrey;
   font-size: 26px;
-  background: #d8e6f3;
 }
 
 .tableTh:first-child,
 .tableTd:first-child {
   text-align: left;
   padding-left: 5%;
+}
+
+.tableTr {
+  background-color: #d8e6f3;
+}
+
+.tableTr:nth-child(2n-1) {
+  background-color: white;
 }
