@@ -20,6 +20,7 @@ export function Statistics({ data, titleText }) {
 }
 
 Statistics.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired })),
+  data: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired }))
+    .isRequired,
 };
 // { title: elem.lable, stats: elem.percentage, id: elem.id }
