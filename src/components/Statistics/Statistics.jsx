@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
-import { StatisticElem } from './StatisticElem';
+import { StatisticElem } from '../StatisticElem/StatisticElem';
+import css from './Statistics.module.css';
 
 export function Statistics({ data, titleText }) {
   return (
-    <section className="statistics">
+    <section className={css.statistics}>
       {/* відмальовка за умовою */}
-      {titleText && <h2 className="title">{titleText}</h2>}
-      <ul className="stat-list">
+      {titleText && <h2 className={css.title}>{titleText.toUpperCase()}</h2>}
+      <ul className={css.statList}>
         {data.map(elem => (
           <StatisticElem
             key={elem.id}

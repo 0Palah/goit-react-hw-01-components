@@ -1,5 +1,5 @@
-import { Profile } from 'components/Profile';
-import { Statistics } from 'components/Statistics';
+import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
 import FriendList from 'components/FriendList/FriendList';
 import Transactions from 'components/Transactions/Transactions';
 
@@ -14,7 +14,7 @@ export const App = () => {
       style={{
         minHeight: '100vh',
         display: 'flex',
-        // flexDirection: 'column',
+        gap: 30,
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,

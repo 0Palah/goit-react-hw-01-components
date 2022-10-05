@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './StatisticElem.module.css';
 
 export function StatisticElem({ title, stats }) {
   return (
-    <li className="stat-item">
-      <span className="stat-label">{title}</span>
-      <span className="stat-percentage">{stats}%</span>;
+    <li className={css.statItem}>
+      <span className={css.statLabel}>{title}</span>
+      <span className={css.statPercentage}>{`${stats}%`}</span>
     </li>
   );
 }

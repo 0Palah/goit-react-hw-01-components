@@ -1,0 +1,17 @@
+.statItem {
+  /* background-color: royalblue; */
+  width: 100%;
+  border: 2px solid darkgray;
+  padding: 5px;
+}
+
+.statLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.statPercentage {
+  font-size: 22px;
+  margin: 5px;
+}
