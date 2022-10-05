@@ -14,7 +14,7 @@ export const App = () => {
       style={{
         minHeight: '100vh',
         display: 'flex',
-        flexDirection: 'column',
+        // flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
