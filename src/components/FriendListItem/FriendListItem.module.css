@@ -1,6 +1,3 @@
-.friendList {
-}
-/* 
 .friendItem {
   display: flex;
   flex-direction: row;
@@ -42,4 +39,4 @@
 
 .friendName {
   font-size: 26px;
-} */
+}

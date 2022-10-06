@@ -7,12 +7,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.description {
-}
-
 .avatar {
   display: block;
   max-width: 50%;
+  border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -42,6 +40,7 @@
   width: calc(100% / 3);
   border: 2px solid darkgray;
   padding: 5px;
+  background-color: #d8e6f3;
 }
 
 .label {
